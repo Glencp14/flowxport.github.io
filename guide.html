@@ -1,1 +1,67 @@
+Let's build the Quick Start Guide page (guide.html).
 
+This page will serve as your comprehensive setup walkthrough, complete with a clean layout, clear step-by-step instructions for getting an OpenAI API key, and a built-in responsive container ready for your future YouTube video.
+
+1. The Guide Page Code (guide.html)
+Create a new file named guide.html in your repository and paste the following structure into it:
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowXport - Quick Start Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container page-container">
+        <!-- Navigation Header -->
+        <header class="page-header">
+            <a href="index.html" class="back-link">&larr; Back to Hub</a>
+            <h1 class="logo-small">FlowXport</h1>
+        </header>
+
+        <!-- Guide Content -->
+        <main class="content-box">
+            <h2>Quick Start Guide & Setup</h2>
+            <p class="intro-text">Follow this step-by-step walkthrough to get FlowXport configured and start exporting clean Salesforce Flow documentation in seconds.</p>
+
+            <!-- Video Placeholder Section -->
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <span>🎥 Video Tutorial Coming Soon</span>
+                </div>
+            </div>
+
+            <div class="steps-list">
+                <h3>Step 1: Open FlowXport in Salesforce</h3>
+                <p>Navigate to any active Salesforce Flow inside the Flow Builder. Click on your browser extensions toolbar and open the FlowXport popup.</p>
+
+                <h3>Step 2: Get Your OpenAI API Key</h3>
+                <p>FlowXport utilizes AI to analyze your flow logic. You will need your own OpenAI API key to power this feature:</p>
+                <ul>
+                    <li>Head over to the <a href="https://platform.openai.com/api-keys" target="_blank">OpenAI API Keys Dashboard</a>.</li>
+                    <li>Log in to your account and click <strong>Create new secret key</strong>.</li>
+                    <li>Copy your new key (it starts with <code>sk-</code>) and keep it secure.</li>
+                </ul>
+
+                <h3>Step 3: Enter Your Key and Export</h3>
+                <p>Paste your API key directly into the FlowXport extension popup field. Click <strong>Export Flow Documentation</strong>, and the tool will automatically analyze your flow and download a formatted HTML report.</p>
+
+                <h3>Understanding Your Limits</h3>
+                <p>FlowXport offers a free tier for initial testing. Once you reach your free limit, you can easily plug in a valid business license key via the settings menu to unlock unlimited exports.</p>
+            </div>
+
+            <div class="bottom-nav">
+                <a href="index.html" class="btn primary-btn">Return to Home</a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 FlowXport. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
