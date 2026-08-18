@@ -212,27 +212,36 @@ footer {
     text-align: center;
 }
 
-.about-section {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 40px auto;
+.about-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 664px; /* Matches the combined width or sits nicely centered */
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Aligns bullets naturally while text flows cleanly */
     color: #4a5568;
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
-.about-section p + p,
-.about-section p + ul {
-    margin-top: 15px;
+.about-card p {
+    margin-bottom: 16px;
+    text-align: center; /* Keeps introductory and closing paragraphs centered */
 }
 
 .about-bullets {
-    text-align: left;
-    display: inline-block;
-    margin: 15px auto;
+    margin: 20px 0;
     padding-left: 20px;
 }
 
 .about-bullets li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.about-footer-text {
+    margin-top: 16px;
+    margin-bottom: 0;
 }
